@@ -1,7 +1,7 @@
 rm(list=ls()) # removes all variables stored previously
 library(Hmisc) # import
 
-data <- read.csv("C:/Users/mykyt/Desktop/covid_R/COVID19_line_list_data.csv")
+data = read.csv("C:/Users/mykyt/Desktop/covid_R/COVID19_line_list_data.csv")
 describe(data) # Hmisc command
 
 # cleaned up death column
@@ -33,10 +33,3 @@ t.test(men$death_dummy, women$death_dummy, alternative="two.sided", conf.level =
 # of dying.
 # p-value = 0.002 < 0.05, so this is statistically
 # significant
-
-
-
-
-
-
-
